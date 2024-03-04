@@ -51,7 +51,7 @@ const HandleCustomers = () => {
 
   const submitCustomer = () => {
     const formData = {
-      cust_name: document.getElementById("customerName").value,
+      name: document.getElementById("customerName").value,
       email: document.getElementById("customerEmail").value,
     };
 
@@ -70,7 +70,7 @@ const HandleCustomers = () => {
       .catch((error) => console.error("Error:", error));
   };
 
-  const columns = ["customer_id", "cust_name", "email"];
+  const columns = ["customer_id", "name", "email"];
 
   return (
     <div className="flex flex-col gap-3 items-center text-black">
